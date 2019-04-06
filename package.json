@@ -1,0 +1,24 @@
+{
+  "name": "neotis-style-framework",
+  "version": "1.0.0",
+  "description": "a responsive and fully customizable css framework  based on Flex-Box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstramirmahdavi/Neotis-Style-Framework.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework",
+    "Neotis"
+  ],
+  "author": "Seyed Amir Mahdavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstramirmahdavi/Neotis-Style-Framework/issues"
+  },
+  "homepage": "https://github.com/mstramirmahdavi/Neotis-Style-Framework#readme"
+}
