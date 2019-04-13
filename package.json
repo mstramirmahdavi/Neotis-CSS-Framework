@@ -1,10 +1,15 @@
 {
   "name": "neotis-style-framework",
   "version": "1.0.0",
-  "description": "a responsive and fully customizable css framework  based on Flex-Box",
+  "description": "a responsive and fully customizable css framework based on Flex-Box",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch-style:scss": "node-sass scss/style.scss dist/style.css -w",
+    "compile-style:scss": "node-sass scss/style.scss dist/style.comp.css",
+    "concat-style:scss": "concat -o dist/style.concat.css dist/style.comp.css",
+    "prefix-style:scss": "postcss --use autoprefixer -b \"last 10 versions\" dist/style.concat.css -o dist/style.prefix.css",
+    "compress-style:scss": "node-sass dist/style.prefix.css dist/style.min.css --output-style compressed",
+    "build-style:scss": "npm-run-all compile-style:scss concat-style:scss prefix-style:scss compress-style:scss"
   },
   "repository": {
     "type": "git",
