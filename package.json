@@ -11,6 +11,12 @@
     "compress-style:scss": "node-sass dist/style.prefix.css dist/style.min.css --output-style compressed",
     "build-style:scss": "npm-run-all compile-style:scss concat-style:scss prefix-style:scss compress-style:scss"
   },
+  "browserslist": [
+    "last 10 version",
+    "> .5%",
+    "maintained node versions",
+    "not dead"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mstramirmahdavi/Neotis-Style-Framework.git"

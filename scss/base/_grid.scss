@@ -1,15 +1,29 @@
 .row {
-  @include flex('', '', '', '', wrap);
+  @include makeRow;
 }
 @each $name in $grid-system-name {
-  @for $i from 1 through $grid-system-column {
-    @if $name != '' {
-      .col-#{$name}-#{$i} {
-        flex: 0 0 ($i * 100% / ($grid-system-column));
-      }
-    } @else {
-      .col-#{$i} {
-        flex: 0 0 ($i * 100% / ($grid-system-column));
+  @include responsive($name) {
+    @for $i from 1 through $grid-system-column {
+      @if $name != '' {
+        .col-#{$name}-#{$i} {
+          @include flex(
+            '',
+            '',
+            '',
+            0 0 ($i * 100% / ($grid-system-column)),
+            ''
+          );
+        }
+      } @else {
+        .col-#{$i} {
+          @include flex(
+            '',
+            '',
+            '',
+            0 0 ($i * 100% / ($grid-system-column)),
+            ''
+          );
+        }
       }
     }
   }
