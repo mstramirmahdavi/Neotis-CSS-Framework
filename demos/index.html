@@ -4,92 +4,234 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./../dist/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../dist/style.min.css" />
     <title>GRID STYSTEM</title>
     <style>
       body {
         padding: 0;
         margin: 0;
+        font-family: 'Open Sans', sans-serif;
       }
-      [class^='col-'] {
+      a {
+        text-decoration: none;
+        color: #1b5050;
+      }
+
+      .header {
+        box-shadow: 0px 0px 10px #33214b;
+        padding: 2rem 0;
+      }
+
+      .header a {
+        font-size: 1.5rem;
+      }
+      .footer {
+        padding: 2rem 0;
+        background-color: #eeeeee;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+      }
+      .title {
+        margin-top: 3rem;
+      }
+      .box {
         padding: 1rem;
-        margin: 1rem 0;
-        background-color: #226666;
+        background-color: #33214b;
         color: #ffffff;
         font-size: 2rem;
+        border: 1px solid #7012d8;
+        justify-content: center;
+        border-radius: 0.5rem;
+      }
+      .padding {
+        padding: 1rem;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row column-xs">
-        <div class="col-1 col-md-6 col-xs-12 top-md">col-1</div>
-        <div class="col-11 col-md-6 col-xs-12 column-xs">
-          <div class="col-2 col-xs-12">col-2</div>
-          <div class="col-2 col-xs-12">col-2</div>
-          <div class="col-2 col-xs-12">col-2</div>
-          <div class="col-2 col-xs-12">col-2</div>
-          <div class="col-2 col-xs-12">col-2</div>
-          <div class="col-2 col-xs-12">col-2</div>
+    <header class="header padding">
+      <div class="row">
+        <div class="col-3">
+          <img src="./assets/image/logo (1).png" alt="" />
+        </div>
+        <div class="col-9 middle-md end-md middle-xs end-xs">
+          <a href="#">Neotis Css Framework</a>
+        </div>
+      </div>
+    </header>
+    <div class="container padding">
+      <div class="row">
+        <div class="title">
+          <h1>Grid System</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 col-sm-6 col-xs-12">col-2</div>
-        <div class="col-10 col-sm-6 col-xs-12">col-10</div>
+        <div class="subTitle">
+          <h2>.col-12</h2>
+        </div>
       </div>
       <div class="row">
-        <div class="col-3">col-3</div>
-        <div class="col-9">col-9</div>
+        <div class="box col-12">col-12</div>
       </div>
       <div class="row">
-        <div class="col-4">col-4</div>
-        <div class="col-8">col-8</div>
+        <div class="subTitle">
+          <h2>.col-1 - .col-11</h2>
+        </div>
       </div>
       <div class="row">
-        <div class="col-5">col-5</div>
-        <div class="col-7">col-7</div>
+        <div class="box col-1 col-sm-12">col-1</div>
+        <div class="box col-11 col-sm-12">col-11</div>
       </div>
       <div class="row">
-        <div class="col-6">col-6</div>
-        <div class="col-6">col-6</div>
-      </div>
-
-      <div class="row">
-        <div class="col-4">col-4</div>
-        <div class="col-4">col-4</div>
-        <div class="col-4">col-4</div>
+        <div class="subTitle">
+          <h2>.col-2 - .col-10</h2>
+        </div>
       </div>
       <div class="row">
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
+        <div class="box col-2 col-sm-6 col-xs-12">col-2</div>
+        <div class="box col-10 col-sm-6 col-xs-12">col-10</div>
       </div>
       <div class="row">
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
+        <div class="subTitle">
+          <h2>.col-3 - .col-9</h2>
+        </div>
       </div>
       <div class="row">
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
+        <div class="box col-3">col-3</div>
+        <div class="box col-9">col-9</div>
       </div>
       <div class="row">
-        <div class="col-12">col-12</div>
+        <div class="subTitle">
+          <h2>.col-4 - .col-8</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-4">col-4</div>
+        <div class="box col-8">col-8</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-5 - .col-7</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-5">col-5</div>
+        <div class="box col-7">col-7</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-6</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-6">col-6</div>
+        <div class="box col-6">col-6</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-4</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-4">col-4</div>
+        <div class="box col-4">col-4</div>
+        <div class="box col-4">col-4</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-3</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-3">col-3</div>
+        <div class="box col-3">col-3</div>
+        <div class="box col-3">col-3</div>
+        <div class="box col-3">col-3</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-2</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-2">col-2</div>
+        <div class="box col-2">col-2</div>
+        <div class="box col-2">col-2</div>
+        <div class="box col-2">col-2</div>
+        <div class="box col-2">col-2</div>
+        <div class="box col-2">col-2</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-1</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-6">col-1</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>Complex Nesting</h2>
+        </div>
+      </div>
+      <div class="row column-xs">
+        <div class="box col-1 col-md-6 col-xs-12 middle-md middle-xs">
+          <div class="box col-12">
+            <div class="box col-3">col-3</div>
+            <div class="box col-3">col-3</div>
+            <div class="box col-6">col-6</div>
+          </div>
+        </div>
+        <div class="box col-11 col-md-6 col-xs-12 column-xs">
+          <div class="box col-2 col-xs-12">col-2</div>
+          <div class="box col-2 col-xs-12">col-2</div>
+          <div class="box col-2 col-xs-12">col-2</div>
+          <div class="box col-2 col-xs-12">col-2</div>
+          <div class="box col-2 col-xs-12">col-2</div>
+          <div class="box col-2 col-xs-12">col-2</div>
+        </div>
+      </div>
+      <div class="row column-xs">
+        <div class="box col-11 col-md-6 col-xs-12 column-xs">
+          <div class="box col-6 col-xs-12">col-6</div>
+          <div class="box col-6 col-xs-12">col-6</div>
+        </div>
+        <div class="box col-1 col-md-6 col-xs-12 middle-md">
+          <div class="box col-12">col-12</div>
+        </div>
+      </div>
+      <div class="row column-xs">
+        <div class="box col-11 col-md-6 col-xs-12 column-xs">
+          <div class="box col-4 col-xs-12">col-4</div>
+          <div class="box col-4 col-xs-12">col-4</div>
+          <div class="box col-2 col-xs-12">col-2</div>
+          <div class="box col-2 col-xs-12">col-2</div>
+        </div>
+        <div class="box col-1 col-md-6 col-xs-12 middle-md">
+          <div class="box col-9">col-9</div>
+          <div class="box col-3">col-3</div>
+        </div>
       </div>
     </div>
+    <footer class="footer padding">
+      <div class="row">
+        All Copyright reserved
+      </div>
+    </footer>
   </body>
 </html>
