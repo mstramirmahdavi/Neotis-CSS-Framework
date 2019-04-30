@@ -1,0 +1,15 @@
+@each $name in $grid-system-name {
+  @include responsive($name) {
+    @if $name != '' {
+      .top-#{$name} {
+        align-items: flex-start;
+      }
+      .middle-#{$name} {
+        align-items: center;
+      }
+      .bottom-#{$name} {
+        align-items: flex-end;
+      }
+    }
+  }
+}

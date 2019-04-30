@@ -12,7 +12,6 @@ if params are empty string get default value
 */
 
 @mixin flex($direction, $justify_content, $align_items, $flex_value, $wrap) {
-  display: flex;
   @if ($direction != '') {
     flex-direction: $direction;
   }

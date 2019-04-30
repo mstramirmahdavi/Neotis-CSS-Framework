@@ -31,7 +31,10 @@
 /* mixins */
 @import './abstracts/mixins/responsive';
 @import './abstracts/mixins/flex';
+@import './abstracts/mixins/makeContainer';
 @import './abstracts/mixins/makeRow';
+@import './abstracts/mixins/justify-content';
+@import './abstracts/mixins/align-items';
 
 /* Base
  => all general styles is here 

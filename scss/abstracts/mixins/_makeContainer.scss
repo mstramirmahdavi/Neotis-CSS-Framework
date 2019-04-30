@@ -1,0 +1,11 @@
+@mixin makeContainer {
+  &,
+  &-fluid {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &-fluid {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}

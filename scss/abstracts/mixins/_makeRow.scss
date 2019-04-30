@@ -1,3 +1,7 @@
 @mixin makeRow {
-  @include flex('', '', '', '', wrap);
+  display: flex;
+  @include flex('', '', '', 0 1 auto, wrap);
+  max-width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
 }

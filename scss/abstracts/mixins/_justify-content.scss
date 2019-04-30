@@ -1,0 +1,21 @@
+@each $name in $grid-system-name {
+  @include responsive($name) {
+    @if $name != '' {
+      .start-#{$name} {
+        justify-content: flex-start;
+      }
+      .center-#{$name} {
+        justify-content: center;
+      }
+      .end-#{$name} {
+        justify-content: flex-end;
+      }
+      .around-#{$name} {
+        justify-content: space-around;
+      }
+      .between-#{$name} {
+        justify-content: space-between;
+      }
+    }
+  }
+}

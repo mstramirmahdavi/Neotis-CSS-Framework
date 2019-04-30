@@ -1,28 +1,56 @@
+.container {
+  @include makeContainer;
+  &.reverse {
+    @include flex(column-reverse, '', '', '', '');
+  }
+}
 .row {
   @include makeRow;
+  &.reverse {
+    @include flex(row-reverse, '', '', 0 1 auto, wrap);
+  }
 }
-@each $name in $grid-system-name {
-  @include responsive($name) {
-    @for $i from 1 through $grid-system-column {
-      @if $name != '' {
-        .col-#{$name}-#{$i} {
-          @include flex(
-            '',
-            '',
-            '',
-            0 0 ($i * 100% / ($grid-system-column)),
-            ''
-          );
-        }
-      } @else {
-        .col-#{$i} {
-          @include flex(
-            '',
-            '',
-            '',
-            0 0 ($i * 100% / ($grid-system-column)),
-            ''
-          );
+
+[class^='col'] {
+  display: flex;
+}
+.col {
+  &.reverse {
+    @include flex(column-reverse, '', '', '', '');
+  }
+  @each $name in $grid-system-name {
+    @if $name != '' {
+      &-#{$name} {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+      }
+    }
+  }
+  @each $name in $grid-system-name {
+    @include responsive($name) {
+      @for $i from 1 through $grid-system-column {
+        @if $name != '' {
+          &-#{$name}-#{$i} {
+            @include flex(
+              '',
+              '',
+              '',
+              0 0 ($i * 100% / ($grid-system-column)),
+              ''
+            );
+            max-width: ($i * 100% / ($grid-system-column));
+          }
+        } @else {
+          &-#{$i} {
+            @include flex(
+              '',
+              '',
+              '',
+              0 0 ($i * 100% / ($grid-system-column)),
+              ''
+            );
+          }
         }
       }
     }
