@@ -15,9 +15,6 @@
   display: flex;
 }
 .col {
-  &.reverse {
-    @include flex(column-reverse, '', '', '', '');
-  }
   @each $name in $grid-system-name {
     @if $name != '' {
       &-#{$name} {
@@ -27,6 +24,7 @@
       }
     }
   }
+
   @each $name in $grid-system-name {
     @include responsive($name) {
       @for $i from 1 through $grid-system-column {
@@ -51,6 +49,22 @@
               ''
             );
           }
+        }
+      }
+    }
+  }
+}
+@each $name in $grid-system-name {
+  @include responsive($name) {
+    @if $name != '' {
+      &.column {
+        &-#{$name} {
+          @include flex(column, '', '', '', '');
+        }
+      }
+      &.column-reverse {
+        &-#{$name} {
+          @include flex(column-reverse, '', '', '', '');
         }
       }
     }

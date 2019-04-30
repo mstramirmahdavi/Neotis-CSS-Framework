@@ -164,9 +164,6 @@ html {
 [class^='col'] {
   display: flex; }
 
-.col.reverse {
-  flex-direction: column-reverse; }
-
 .col-lg {
   flex-grow: 1;
   flex-basis: 0;
@@ -374,6 +371,30 @@ html {
   .col-xs-12 {
     flex: 0 0 100%;
     max-width: 100%; } }
+
+@media only screen and (min-width: 170rem) {
+  .column-lg {
+    flex-direction: column; }
+  .column-reverse-lg {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 120rem) {
+  .column-md {
+    flex-direction: column; }
+  .column-reverse-md {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 120rem) {
+  .column-sm {
+    flex-direction: column; }
+  .column-reverse-sm {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 70rem) {
+  .column-xs {
+    flex-direction: column; }
+  .column-reverse-xs {
+    flex-direction: column-reverse; } }
 
 /* Components
   => more specific styles
