@@ -35,17 +35,17 @@
 @import './abstracts/mixins/makeRow';
 
 /* Base
- => all general styles is here 
+ => all main styles is here 
 */
 
 //reset
-@import './base/reset';
+@import './base/reset/reset';
 
 //typography
-@import './base/typography';
+@import './base/typography/typography';
 
-//grid
-@import './base/grid';
+//grid system
+@import './base/gird/index';
 
 /* Components
   => more specific styles

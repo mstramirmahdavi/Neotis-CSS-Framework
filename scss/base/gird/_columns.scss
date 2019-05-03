@@ -1,0 +1,16 @@
+@each $name in $grid-system-name {
+  @include responsive($name) {
+    @if $name != '' {
+      &.column {
+        &-#{$name} {
+          @include flex(column, '', '', '', '');
+        }
+      }
+      &.column-reverse {
+        &-#{$name} {
+          @include flex(column-reverse, '', '', '', '');
+        }
+      }
+    }
+  }
+}

@@ -8,58 +8,25 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./dist/style.min.css" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="stylesheet" href="./assets/style/custom.css" />
     <title>Neotis Css Framework</title>
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: 'Open Sans', sans-serif;
-      }
-      a {
-        text-decoration: none;
-        color: #1b5050;
-      }
-
-      .header {
-        box-shadow: 0px 0px 10px #33214b;
-        padding: 2rem 0;
-      }
-
-      .header a {
-        font-size: 1.5rem;
-      }
-      .footer {
-        padding: 2rem 0;
-        background-color: #eeeeee;
-        margin-top: 2rem;
-        font-size: 1.2rem;
-      }
-      .title {
-        margin-top: 3rem;
-      }
-      .box {
-        padding: 1rem;
-        background-color: #33214b;
-        color: #ffffff;
-        font-size: 2rem;
-        border: 1px solid #7012d8;
-        justify-content: center;
-        border-radius: 0.5rem;
-      }
-      .padding {
-        padding: 1rem;
-      }
-    </style>
   </head>
   <body>
     <header class="header padding">
       <div class="row">
         <div class="col-3">
-          <img src="./demos/assets/image/logo (1).png" alt="" />
+          <img src="./assets/image/logo (1).png" alt="" />
         </div>
         <div class="col-9 middle-md end-md middle-xs end-xs">
-          <a href="#">Neotis Css Framework</a>
+          <!-- <div class="col-end-md end-xs9">
+            <ul>
+              <li><a href="#">Docs</a></li>
+            </ul>
+          </div> -->
+          <div class="col-3 name end-md end-xs">
+            <a href="#">Neotis Css Framework</a>
+          </div>
         </div>
       </div>
     </header>
@@ -189,7 +156,7 @@
           <h2>Complex Nesting</h2>
         </div>
       </div>
-      <div class="row column-xs">
+      <div class="row column-xs bottom-gutter">
         <div class="box col-1 col-md-6 col-xs-12 middle-md middle-xs">
           <div class="box col-12">
             <div class="box col-3">col-3</div>
@@ -198,15 +165,15 @@
           </div>
         </div>
         <div class="box col-11 col-md-6 col-xs-12 column-xs">
-          <div class="box col-2 col-xs-12">col-2</div>
-          <div class="box col-2 col-xs-12">col-2</div>
-          <div class="box col-2 col-xs-12">col-2</div>
-          <div class="box col-2 col-xs-12">col-2</div>
-          <div class="box col-2 col-xs-12">col-2</div>
-          <div class="box col-2 col-xs-12">col-2</div>
+          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
         </div>
       </div>
-      <div class="row column-xs">
+      <div class="row column-xs bottom-gutter">
         <div class="box col-11 col-md-6 col-xs-12 column-xs">
           <div class="box col-6 col-xs-12">col-6</div>
           <div class="box col-6 col-xs-12">col-6</div>
@@ -215,7 +182,7 @@
           <div class="box col-12">col-12</div>
         </div>
       </div>
-      <div class="row column-xs">
+      <div class="row column-xs bottom-gutter">
         <div class="box col-11 col-md-6 col-xs-12 column-xs">
           <div class="box col-4 col-xs-12">col-4</div>
           <div class="box col-4 col-xs-12">col-4</div>

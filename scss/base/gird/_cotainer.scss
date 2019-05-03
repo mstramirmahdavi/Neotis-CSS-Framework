@@ -1,0 +1,6 @@
+.container {
+  @include makeContainer;
+  &.reverse {
+    @include flex(column-reverse, '', '', '', '');
+  }
+}
