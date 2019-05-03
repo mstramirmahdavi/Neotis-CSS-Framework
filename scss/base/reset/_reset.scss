@@ -3,4 +3,10 @@
 }
 html {
   font-size: $rem_default;
+  @include responsive('lg') {
+    font-size: $rem_default * 1.4;
+  }
+  @include responsive('xlg') {
+    font-size: $rem_default * 1.8;
+  }
 }
