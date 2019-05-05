@@ -64,6 +64,9 @@ html {
   @media only screen and (min-width: 2500px) {
     html {
       font-size: 112.5%; } }
+  @media only screen and (min-width: 4000px) {
+    html {
+      font-size: 162.5%; } }
 
 .container, .container-fluid {
   margin-right: auto;

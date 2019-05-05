@@ -9,4 +9,7 @@ html {
   @include responsive('xlg') {
     font-size: $rem_default * 1.8;
   }
+  @include responsive('xxlg') {
+    font-size: $rem_default * 2.6;
+  }
 }
