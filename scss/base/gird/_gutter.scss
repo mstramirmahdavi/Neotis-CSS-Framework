@@ -1,23 +1,91 @@
 .gutter {
   margin: $gutter-value;
 }
-.vertical-gutter {
-  margin-top: $gutter-value;
-  margin-bottom: $gutter-value;
+.vertical {
+  &-gutter {
+    margin-top: $gutter-value;
+    margin-bottom: $gutter-value;
+  }
+  @each $name in $grid-system-name {
+    @include responsive($name) {
+      @if $name != '' {
+        &-gutter-#{$name} {
+          margin-top: $gutter-value;
+          margin-bottom: $gutter-value;
+        }
+      }
+    }
+  }
 }
-.horizontal-gutter {
-  margin-left: $gutter-value;
-  margin-right: $gutter-value;
+.horizontal {
+  &-gutter {
+    margin-left: $gutter-value;
+    margin-right: $gutter-value;
+  }
+  @each $name in $grid-system-name {
+    @include responsive($name) {
+      @if $name != '' {
+        &-gutter-#{$name} {
+          margin-left: $gutter-value;
+          margin-right: $gutter-value;
+        }
+      }
+    }
+  }
 }
-.top-gutter {
-  margin-top: $gutter-value;
+.top {
+  &-gutter {
+    margin-top: $gutter-value;
+  }
+  @each $name in $grid-system-name {
+    @include responsive($name) {
+      @if $name != '' {
+        &-gutter-#{$name} {
+          margin-top: $gutter-value;
+        }
+      }
+    }
+  }
 }
-.bottom-gutter {
-  margin-bottom: $gutter-value;
+.bottom {
+  &-gutter {
+    margin-bottom: $gutter-value;
+  }
+  @each $name in $grid-system-name {
+    @include responsive($name) {
+      @if $name != '' {
+        &-gutter-#{$name} {
+          margin-bottom: $gutter-value;
+        }
+      }
+    }
+  }
 }
-.left-gutter {
-  margin-left: $gutter-value;
+.left {
+  &-gutter {
+    margin-left: $gutter-value;
+  }
+  @each $name in $grid-system-name {
+    @include responsive($name) {
+      @if $name != '' {
+        &-gutter-#{$name} {
+          margin-left: $gutter-value;
+        }
+      }
+    }
+  }
 }
-.right-gutter {
-  margin-right: $gutter-value;
+.right {
+  &-gutter {
+    margin-right: $gutter-value;
+  }
+  @each $name in $grid-system-name {
+    @include responsive($name) {
+      @if $name != '' {
+        &-gutter-#{$name} {
+          margin-right: $gutter-value;
+        }
+      }
+    }
+  }
 }

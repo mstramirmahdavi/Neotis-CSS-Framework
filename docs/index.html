@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/icons/safari-pinned-tab.svg"
+      color="#33214b"
+    />
+    <meta name="msapplication-TileColor" content="#33214b" />
+    <meta name="theme-color" content="#33214b" />
+    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
     />
@@ -18,86 +43,110 @@
         <div class="col-3">
           <img src="./assets/image/logo (1).png" alt="" />
         </div>
-        <div class="col-9 middle-md end-md middle-sm end-sm">
+        <div class="col-13 middle-md end-md middle-sm end-sm">
           <!-- <div class="col-end-md end-xs9">
             <ul>
               <li><a href="#">Docs</a></li>
             </ul>
           </div> -->
-          <div class="col name end-md end-sm">
-            <a class="col end-sm" href="#">Neotis Css Framework</a>
+          <div class="name end-md end-sm">
+            <a class="end-sm" href="#">Neotis Css Framework</a>
           </div>
         </div>
       </div>
     </header>
     <div class="container padding">
-      <div class="row">
-        <div class="title">
+      <div class="row center-md">
+        <div class="title ">
           <h1>Grid System</h1>
         </div>
       </div>
       <div class="row">
-        <div class="subTitle">
-          <h2>.col-12</h2>
+        <div class="title ">
+          <h1>Fixed Grid</h1>
         </div>
       </div>
       <div class="row">
-        <div class="box col-12">col-12</div>
-      </div>
-      <div class="row">
         <div class="subTitle">
-          <h2>.col-1 - .col-11</h2>
+          <h2>.col-16</h2>
         </div>
       </div>
       <div class="row">
-        <div class="box col-1 col-xs-12">col-1</div>
-        <div class="box col-11 col-xs-12">col-11</div>
+        <div class="box col-16">col-16</div>
       </div>
       <div class="row">
         <div class="subTitle">
-          <h2>.col-2 - .col-10</h2>
+          <h2>.col-1 - .col-15</h2>
         </div>
       </div>
       <div class="row">
-        <div class="box col-2 col-sm-6 col-xs-12">col-2</div>
-        <div class="box col-10 col-sm-6 col-xs-12">col-10</div>
+        <div class="box col-1 col-xs-16 bottom-gutter-xs">col-1</div>
+        <div class="box col-15 col-xs-16">col-15</div>
       </div>
       <div class="row">
         <div class="subTitle">
-          <h2>.col-3 - .col-9</h2>
+          <h2>.col-2 - .col-14</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-14 col-xs-16">col-14</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-3 - .col-13</h2>
         </div>
       </div>
       <div class="row">
         <div class="box col-3">col-3</div>
-        <div class="box col-9">col-9</div>
+        <div class="box col-13">col-13</div>
       </div>
       <div class="row">
         <div class="subTitle">
-          <h2>.col-4 - .col-8</h2>
+          <h2>.col-4 - .col-12</h2>
         </div>
       </div>
       <div class="row">
         <div class="box col-4">col-4</div>
-        <div class="box col-8">col-8</div>
+        <div class="box col-12">col-12</div>
       </div>
       <div class="row">
         <div class="subTitle">
-          <h2>.col-5 - .col-7</h2>
+          <h2>.col-5 - .col-11</h2>
         </div>
       </div>
       <div class="row">
         <div class="box col-5">col-5</div>
-        <div class="box col-7">col-7</div>
+        <div class="box col-11">col-11</div>
       </div>
       <div class="row">
         <div class="subTitle">
-          <h2>.col-6</h2>
+          <h2>.col-6 - .col-10</h2>
         </div>
       </div>
       <div class="row">
         <div class="box col-6">col-6</div>
-        <div class="box col-6">col-6</div>
+        <div class="box col-10">col-10</div>
       </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-7 - .col-9</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-7">col-7</div>
+        <div class="box col-9">col-9</div>
+      </div>
+      <div class="row">
+        <div class="subTitle">
+          <h2>.col-8</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-8">col-8</div>
+        <div class="box col-8">col-8</div>
+      </div>
+
       <div class="row">
         <div class="subTitle">
           <h2>.col-4</h2>
@@ -107,17 +156,7 @@
         <div class="box col-4">col-4</div>
         <div class="box col-4">col-4</div>
         <div class="box col-4">col-4</div>
-      </div>
-      <div class="row">
-        <div class="subTitle">
-          <h2>.col-3</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="box col-3">col-3</div>
-        <div class="box col-3">col-3</div>
-        <div class="box col-3">col-3</div>
-        <div class="box col-3">col-3</div>
+        <div class="box col-4">col-4</div>
       </div>
       <div class="row">
         <div class="subTitle">
@@ -125,12 +164,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="box col-2 col-xs-6">col-2</div>
-        <div class="box col-2 col-xs-6">col-2</div>
-        <div class="box col-2 col-xs-12">col-2</div>
-        <div class="box col-2 col-xs-4">col-2</div>
-        <div class="box col-2 col-xs-4">col-2</div>
-        <div class="box col-2 col-xs-4">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
+        <div class="box col-2 col-xs-16 bottom-gutter-xs">col-2</div>
       </div>
       <div class="row">
         <div class="subTitle">
@@ -138,58 +179,109 @@
         </div>
       </div>
       <div class="row">
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
-        <div class="box col-1 col-xs-6">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+        <div class="box col-1 col-xs-8 bottom-gutter-xs">col-1</div>
+      </div>
+      <div class="row">
+        <div class="title ">
+          <h1>Fluid Grid</h1>
+        </div>
       </div>
       <div class="row">
         <div class="subTitle">
-          <h2>Complex Nesting</h2>
+          <h2>.col</h2>
+        </div>
+      </div>
+      <div class="row bottom-gutter">
+        <div class="box col ">col</div>
+      </div>
+      <div class="row bottom-gutter">
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+      </div>
+      <div class="row bottom-gutter">
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+      </div>
+      <div class="row bottom-gutter">
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+      </div>
+      <div class="row bottom-gutter">
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+      </div>
+      <div class="row bottom-gutter">
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+        <div class="box col ">col</div>
+      </div>
+
+      <div class="row">
+        <div class="title">
+          <h1>Complex Nesting</h1>
         </div>
       </div>
       <div class="row column-xs bottom-gutter">
-        <div class="box col-1 col-md-6 col-sm-6 col-xs-12 middle-md middle-xs">
-          <div class="box col-12">
+        <div class="box col-1 col-md-8 col-sm-8 col-xs-16 middle-md middle-xs">
+          <div class="box col-12 col-xs-16">
             <div class="box col-3">col-3</div>
             <div class="box col-3">col-3</div>
             <div class="box col-6">col-6</div>
           </div>
         </div>
-        <div class="box col-11 col-md-6 col-sm-6 col-xs-12 column-xs">
-          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
-          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
-          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
-          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
-          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
-          <div class="box col-2 col-xs-12 middle-md middle-xs">col-2</div>
+        <div class="box col-11 col-md-8 col-sm-8 col-xs-16 column-xs">
+          <div class="box col-2 col-xs-16 bottom-gutter-xs middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-16 bottom-gutter-xs middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-16 bottom-gutter-xs middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-16 bottom-gutter-xs middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-16 bottom-gutter-xs middle-md middle-xs">col-2</div>
+          <div class="box col-2 col-xs-16 bottom-gutter-xs middle-md middle-xs">col-2</div>
         </div>
       </div>
       <div class="row column-xs bottom-gutter">
-        <div class="box col-11 col-md-6 col-sm-7 col-xs-12 column-xs">
-          <div class="box col-6 col-xs-12">col-6</div>
-          <div class="box col-6 col-xs-12">col-6</div>
+        <div class="box col-11 col-md-8 col-sm-8 col-xs-16 column-xs bottom-gutter-xs">
+          <div class="box col-6 col-xs-16 bottom-gutter-xs">col-6</div>
+          <div class="box col-6 col-xs-16">col-6</div>
         </div>
-        <div class="box col-1 col-md-6 col-sm-5 col-xs-12 middle-md">
-          <div class="box col-12">col-12</div>
+        <div class="box col-1 col-md-8 col-sm-8 col-xs-16 middle-md">
+          <div class="box col-16">col-16</div>
         </div>
       </div>
       <div class="row column-xs bottom-gutter">
-        <div class="box col-11 col-md-6 col-sm-6 col-xs-12 column-xs">
-          <div class="box col-4 col-xs-12">col-4</div>
-          <div class="box col-4 col-xs-12">col-4</div>
-          <div class="box col-2 col-xs-12">col-2</div>
-          <div class="box col-2 col-xs-12">col-2</div>
+        <div class="box col-11 col-md-8 col-sm-8 col-xs-16 column-xs">
+          <div class="box col-4 col-xs-16">col-4</div>
+          <div class="box col-4 col-xs-16">col-4</div>
+          <div class="box col-2 col-xs-16">col-2</div>
+          <div class="box col-2 col-xs-16">col-2</div>
         </div>
-        <div class="box col-1 col-md-6 col-sm-6 col-xs-12 middle-md">
+        <div class="box col-1 col-md-8 col-sm-8 col-xs-16 middle-md">
           <div class="box col-9">col-9</div>
           <div class="box col-3">col-3</div>
         </div>
@@ -200,5 +292,7 @@
         All Copyright reserved
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
+    <script src="./sw.js"></script>
   </body>
 </html>

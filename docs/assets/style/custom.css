@@ -35,7 +35,7 @@ ul {
   padding: 1rem;
   background-color: #33214b;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: 1px solid #7012d8;
   justify-content: center;
   border-radius: 0.5rem;
@@ -46,6 +46,6 @@ ul {
 
 @media only screen and (max-width: 1200px) {
   .box {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
