@@ -3,3 +3,11 @@ $grid-system-column: 16;
 $gutter-value: 0.5rem;
 
 $rem_default: 62.5%;
+$rem_default_value: 1rem;
+
+$h1-font-size: $rem_default_value * 4 !default;
+$h2-font-size: $rem_default_value * 3.5 !default;
+$h3-font-size: $rem_default_value * 3 !default;
+$h4-font-size: $rem_default_value * 2.5 !default;
+$h5-font-size: $rem_default_value * 2 !default;
+$h6-font-size: $rem_default_value * 1.5 !default;
