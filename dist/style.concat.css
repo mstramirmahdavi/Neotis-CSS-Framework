@@ -127,8 +127,13 @@ p {
   flex: 0 1 auto;
   flex-wrap: wrap;
   max-width: 120rem;
+  min-width: 120rem;
   margin-right: auto;
   margin-left: auto; }
+  @media only screen and (max-width: 1200px) {
+    .row {
+      max-width: 100%;
+      min-width: 100%; } }
   .row.reverse {
     flex-direction: row-reverse;
     flex: 0 1 auto;

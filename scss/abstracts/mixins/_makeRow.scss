@@ -2,6 +2,11 @@
   display: flex;
   @include flex('', '', '', 0 1 auto, wrap);
   max-width: 120rem;
+  min-width: 120rem;
   margin-right: auto;
   margin-left: auto;
+  @include responsive('sm') {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
